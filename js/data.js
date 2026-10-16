@@ -125,8 +125,7 @@ window.PROJECTS = [
       ]}
     ],
     docs: [
-      { label: "Read the Project (pdf)", key: "traveloka_pdf" },
-      { label: "Read the Project (ppt)", key: "traveloka_ppt" }
+      { label: "Read the Project (pdf)", key: "traveloka_pdf" }
     ],
     next: "Pick one North Star Metric to tie the OKRs together — for example, completed trips booked per month."
   },
