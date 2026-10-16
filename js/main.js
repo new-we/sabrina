@@ -377,8 +377,8 @@
       ${p.next ? `<section class="cs-sec cs-r cs-next"><div class="cs-callout"><b>If I kept going</b><p>${esc(p.next)}</p></div></section>` : ''}
       ${docs ? `<div class="cs-docs cs-r cs-sec" style="margin-top:40px">${docs}</div>` : ''}
       <nav class="cs-nav" aria-label="Case studies">
-        <button ${prev ? '' : 'disabled'} data-go="${i - 1}"><small>← Previous</small><span>${prev ? esc(prev.title) : ''}</span></button>
-        <button ${nextP ? '' : 'disabled'} data-go="${i + 1}"><small>Next →</small><span>${nextP ? esc(nextP.title) : ''}</span></button>
+        ${prev ? `<button data-go="${i - 1}"><small>← Previous</small><span>${esc(prev.title)}</span></button>` : `<button data-close><small>✕ Close</small><span>Back to portfolio</span></button>`}
+        ${nextP ? `<button data-go="${i + 1}"><small>Next →</small><span>${esc(nextP.title)}</span></button>` : `<button data-close><small>✕ Close</small><span>Back to portfolio</span></button>`}
       </nav>`;
     csCount.textContent = `${String(i + 1).padStart(2, '0')} / ${String(P.length).padStart(2, '0')}`;
     csScroll.scrollTop = 0;
@@ -472,6 +472,8 @@
   csInner.addEventListener('click', e => {
     const go = e.target.closest('[data-go]');
     if (go) { switchCase(+go.dataset.go); return; }
+    const cl = e.target.closest('[data-close]');
+    if (cl) { closeCase(); return; }
     const z = e.target.closest('[data-zoom]');
     if (z) { openLightbox(z.dataset.zoom, $('img', z).alt); return; }
     const miss = e.target.closest('[data-missing]');
