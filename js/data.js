@@ -11,8 +11,8 @@ window.CONFIG = {
     ayam: "assets/docs/ayam-mantap-77-requirement.pdf",
     traveloka_pdf: "assets/docs/traveloka-okr.pdf",
     traveloka_ppt: "",
-    shopee_brd: "assets/docs/brd-to-fsd.pdf",
-    shopee_fsd: "assets/docs/brd-to-fsd.pdf",
+    shopee_brd: "assets/docs/brd-shopee-live-checkout.pdf",
+    shopee_fsd: "assets/docs/fsd-shopee-live-checkout.pdf",
     shopee_prd: "assets/docs/prd-shopee-live-checkout.pdf",
     sehatkerja: "assets/docs/sehatkerja-scrum-plan.pdf"
   }
