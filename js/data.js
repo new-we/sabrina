@@ -4,17 +4,17 @@
 
 /* Fill these in. Empty links show a small "link not set" notice instead of opening. */
 window.CONFIG = {
-  email: "",                // e.g. "vina@email.com"
-  linkedin: "",             // e.g. "https://www.linkedin.com/in/your-name"
+  email: "vinasabrinaa@gmail.com",
+  linkedin: "https://www.linkedin.com/in/vinasabrina",
   photo: "assets/photo.jpg", // optional profile photo (falls back to initials if missing)
   docs: {                   // links for the "Read the … (pdf)" buttons
-    ayam: "",               // Ayam Mantap 77 requirement PDF
-    traveloka_pdf: "",
+    ayam: "assets/docs/ayam-mantap-77-requirement.pdf",
+    traveloka_pdf: "assets/docs/traveloka-okr.pdf",
     traveloka_ppt: "",
-    shopee_brd: "",
-    shopee_fsd: "",
-    shopee_prd: "",
-    sehatkerja: ""
+    shopee_brd: "assets/docs/brd-to-fsd.pdf",
+    shopee_fsd: "assets/docs/brd-to-fsd.pdf",
+    shopee_prd: "assets/docs/prd-shopee-live-checkout.pdf",
+    sehatkerja: "assets/docs/sehatkerja-scrum-plan.pdf"
   }
 };
 
